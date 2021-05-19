@@ -1,25 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import { HeaderBar } from './components/HeaderBar.tsx';
+import React from 'react';
+import styled from 'styled-components';
+import { Button } from '@material-ui/core';
+import Background from './images/background_image2.png';
 
-function App() {
+const Screen = styled.div`
+  background-color: #ffffff;
+  background-image:url(${Background});
+  width: "100%";
+
+`;
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Screen>
+     <HeaderBar/>
+    </Screen>
   );
 }
+
 
 export default App;
