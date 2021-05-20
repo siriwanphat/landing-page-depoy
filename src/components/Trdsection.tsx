@@ -102,8 +102,6 @@ const StyledButton = styled.div`
 `;
 
 const FourthContainer = styled.div`
-    height: 1080px;
-
     li.dot.selected{
         background-color:#FF6057 !important;
     }
@@ -137,7 +135,7 @@ export const Trdsection = () => {
                 alignItems="flex-start"
             //style={{ margin: "100px 0px 100px 0px" }} 
             >
-                <Grid item xs={12} sm={6} >
+                <Grid item xs={12} sm={6}>
                     <StyledLine />
                     <FontStyleMiddle style={{ paddingTop: 10, paddingRight: 150 }}>The best business solution for you</FontStyleMiddle>
                     <FontStyleSmall style={{ paddingTop: 30, paddingRight: 100, paddingBottom: 20 }}>
@@ -174,44 +172,67 @@ export const Trdsection = () => {
                     )}
                 </Grid>
             </Grid>
-            <Grid container
-                spacing={1}
-                direction="row"
-                justify="center"
-                alignItems="center">
-                <FontStyleMiddle style={{ paddingLeft: 300, paddingRight: 300, paddingTop: 50 }}>Don't Just Take</FontStyleMiddle>
-                <FontStyleMiddle style={{ paddingLeft: 300, paddingRight: 300, paddingBottom: 50 }}>our Word for it!</FontStyleMiddle>
-            </Grid>
-            <Grid container
-                spacing={1}
-                direction="row"
-                justify="center"
-                alignItems="center">
-                <Grid item xs={3}>
-                    <FontStyleBigRed>570</FontStyleBigRed>
-                    <FontStyleSmallBlack>Dowload</FontStyleSmallBlack>
+
+            <div style={{ margin: "100px 0px" }}>
+                <div style={{ display: "flex", flexDirection: "column", alignItems: "center", margin: "100px 0px" }}>
+                    <FontStyleMiddle>Don't Just Take</FontStyleMiddle>
+                    <FontStyleMiddle>our Word for it!</FontStyleMiddle>
+                </div>
+                <Grid container>
+                    <Grid item xs={3}>
+                        <div style={{
+                            display: "flex",
+                            flexDirection: "column",
+                            alignItems: "center"
+                        }}>
+                            <FontStyleBigRed>570</FontStyleBigRed>
+                            <FontStyleSmallBlack>Dowload</FontStyleSmallBlack>
+
+                        </div>
+
+                    </Grid>
+                    <Grid item xs={3}>
+                        <div style={{
+                            display: "flex",
+                            flexDirection: "column",
+                            alignItems: "center"
+                        }}>
+                            <FontStyleBigRed>570</FontStyleBigRed>
+                            <FontStyleSmallBlack>Active User</FontStyleSmallBlack>
+                        </div>
+
+                    </Grid>
+                    <Grid item xs={3}>
+                        <div style={{
+                            display: "flex",
+                            flexDirection: "column",
+                            alignItems: "center"
+                        }}>
+                            <FontStyleBigRed>570</FontStyleBigRed>
+                            <FontStyleSmallBlack>Positive Feedback</FontStyleSmallBlack>
+                        </div>
+
+                    </Grid>
+                    <Grid item xs={3}>
+                        <div style={{
+                            display: "flex",
+                            flexDirection: "column",
+                            alignItems: "center"
+                        }}>
+                            <FontStyleBigRed>570</FontStyleBigRed>
+                            <FontStyleSmallBlack>+ rating </FontStyleSmallBlack>
+                        </div>
+
+                    </Grid>
                 </Grid>
-                <Grid item xs={3}>
-                    <FontStyleBigRed>570</FontStyleBigRed>
-                    <FontStyleSmallBlack>Active User</FontStyleSmallBlack>
-                </Grid>
-                <Grid item xs={3}>
-                    <FontStyleBigRed>570</FontStyleBigRed>
-                    <FontStyleSmallBlack>Positive Feedback</FontStyleSmallBlack>
-                </Grid>
-                <Grid item xs={3}>
-                    <FontStyleBigRed>570</FontStyleBigRed>
-                    <FontStyleSmallBlack>+ rating </FontStyleSmallBlack>
-                </Grid>
-            </Grid>
+
+            </div>
+
+
+
             <FourthContainer>
-                <Grid container
-                    spacing={1}
-                    direction="row"
-                    justify="center"
-                    alignItems="center"
-                    style={{ paddingTop: 100 }}>
-                    <Grid item xs={12} sm={6}>
+                <Grid container justify="center" alignItems="center">
+                    <Grid item xs={12} sm={12} md={6}>
                         <Carousel
                             showThumbs={false}
                             showStatus={false}
@@ -228,21 +249,24 @@ export const Trdsection = () => {
                             </div>
                         </Carousel>
                     </Grid>
-                    <Grid item xs={12} sm={6}>
-                        <StyledLine />
-                        <FontStyleMiddle style={{ paddingTop: 10, paddingRight: 150 }}>The best business solution for you</FontStyleMiddle>
-                        <FontStyleSmall style={{ paddingTop: 30, paddingRight: 100, paddingBottom: 20 }}>
-                            Lorem ipsum dolor sit amet,
-                            consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-                            invidunt ut labore et dolore magna aliquyam erat, sed diam
-                            voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-                            Stet clita kasd gubergren, no sea takimata sanctus
+                    <Grid item xs={12} sm={12} md={6}>
+                        <div style={{margin:"100px 0px"}}>
+                            <StyledLine />
+                            <FontStyleMiddle style={{ paddingTop: 10, paddingRight: 150 }}>The best business solution for you</FontStyleMiddle>
+                            <FontStyleSmall style={{ paddingTop: 30, paddingRight: 100, paddingBottom: 20 }}>
+                                Lorem ipsum dolor sit amet,
+                                consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                                invidunt ut labore et dolore magna aliquyam erat, sed diam
+                                voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                                Stet clita kasd gubergren, no sea takimata sanctus
                         est Lorem ipsum dolor sit amet</FontStyleSmall>
-                        <HeaderBarContainer>
-                            <StyledButton>
-                                <Button variant="contained">About us</Button>
-                            </StyledButton>
-                        </HeaderBarContainer>
+                            <HeaderBarContainer>
+                                <StyledButton>
+                                    <Button variant="contained">About us</Button>
+                                </StyledButton>
+                            </HeaderBarContainer>
+                        </div>
+
                     </Grid>
                 </Grid>
             </FourthContainer>

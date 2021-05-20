@@ -13,7 +13,6 @@ import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const FourthContainer = styled.div`
-    height: 1080px;
     text-align: center;
 
     h3{

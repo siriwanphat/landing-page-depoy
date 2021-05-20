@@ -9,18 +9,22 @@ import { NdSection } from './components/Ndsection'
 import { Trdsection } from './components/Trdsection'
 import { FourthSection } from './components/FourthSection'
 import { Lastsection } from './components/Lastsection.tsx'
+import { media } from './utils/mixins'
+
 
 const HeaderScreen = styled.div`
   background-image:url(${Background});
   background-repeat: no-repeat;
   background-size:  cover;
   background-position: 50% 50%;
+  background-color: #fff;
   width: 100%;
-  height: 1080px;
+  /* height: 1000px; */
 `;
 
 const BodyScreen = styled.div`
   background-color: #fff;
+  
 `;
 
 const ScreenContainer = styled.div`
@@ -46,10 +50,10 @@ const App = () => {
           <FourthSection />
           <Trdsection />
         </Container>
-      </BodyScreen>
-      <ScreenLast>
-        <Lastsection/>
+        <ScreenLast>
+        <Lastsection />
       </ScreenLast>
+      </BodyScreen>
     </ScreenContainer>
   );
 }

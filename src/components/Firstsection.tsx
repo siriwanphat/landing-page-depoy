@@ -11,6 +11,7 @@ import { ReactComponent as Shopify } from '../svg/shopify.svg';
 import { Button, Card, CardMedia } from '@material-ui/core'
 import Box from '@material-ui/core/Box';
 import Popup from './images/nopath.png';
+import { media } from '../utils/mixins'
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
@@ -36,12 +37,7 @@ const useFont = makeStyles({
     },
 });
 
-const Take = styled.h1`
-  font-size : 58px;
-  font-weight: bold;
-  color: #ffffff;
-  margin: 0px;
-`;
+
 
 const Lorem = styled.h2`
   font-size : 18px;
@@ -70,17 +66,33 @@ const StyledButton = styled.div`
     padding-top: 20px;
 `;
 
+const TopContainer = styled.div`
+    .top{
+        padding: 100px 0px 150px 0px;
+        ${media.sm`
+        padding: 100px 0px 50px 0px;
+	`}
+    }
+    h1{
+        font-size : 58px;
+        font-weight: bold;
+        color: #ffffff;
+        margin: 0px 20px 0px 0px;
+    }
+`;
+
+
 export const FirstSection = () => {
     const classes = useStyles();
     const classfont = useFont();
 
     return (
-        <div className={classes.root} >
-            <Grid container spacing={0} justify="center" alignItems="center" style={{ margin: "100px 0px"}}> 
-                <Grid item xs={12} sm={6} >
+        <TopContainer>
+            <Grid container justify="center" alignItems="center" className={"top"}>
+                <Grid item xs={12} md={6} >
                     <Advance > Advanced Platform </Advance>
-                    <Take style={{paddingRight:150}}>Take your team to the next level</Take>
-                    <Lorem style={{paddingTop:10,paddingRight:150}}>
+                    <h1>Take your team to <br /> the next level</h1>
+                    <Lorem style={{ paddingTop: 10, paddingRight: 150 }}>
                         Lorem ipsum dolor sit amet,
                         consetetur sadipscingelitr,
                         sed diam nonumy eirmod</Lorem>
@@ -88,18 +100,31 @@ export const FirstSection = () => {
                         <Button variant="contained">About us</Button>
                     </StyledButton>
                 </Grid>
-                <Grid item xs={12} sm={6}>
-                    <Box >
-                        <img width={1000} height={700} src="/images/1.png" />
+                <Grid item xs={12} md={6}>
+                    <Box>
+                        <img width={"100%"} height={"100%"} src="/images/1.png" />
                     </Box>
+                </Grid>
+            </Grid>
 
+            <Grid container justify="center" alignItems="center">
+                <Grid container justify="center" item xs={12} sm={4} md >
+                    <Bench />
                 </Grid>
-            </Grid>
-            <Grid container spacing={1} justify="center">
-                <Grid spacing={1} direction="column" justify="center" alignItems="center" >
-                    <Bench /><Bumble /><Forbes /><Nearpod /><Shopify />
+                <Grid container justify="center" item xs={12} sm={4} md >
+                    <Bumble />
                 </Grid>
+                <Grid container justify="center" item xs={12} sm={4} md >
+                    <Forbes />
+                </Grid>
+                <Grid container justify="center" item xs={12} sm={6} md >
+                    <Nearpod />
+                </Grid>
+                <Grid container justify="center" item xs={12} sm={6} md >
+                    <Shopify />
+                </Grid>
+
             </Grid>
-        </div >
+        </TopContainer >
     )
 }

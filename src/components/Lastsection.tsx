@@ -4,6 +4,7 @@ import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import styled from "styled-components";
 import { ReactComponent as Slogo } from '../svg/smallogo.svg';
+import { media } from '../utils/mixins'
 import {
     Button, Card, CardMedia, Container, TextField
 } from '@material-ui/core';
@@ -13,7 +14,7 @@ import {
     ThemeProvider,
     withStyles,
     createMuiTheme,
-  } from '@material-ui/core/styles';
+} from '@material-ui/core/styles';
 import InputBase from '@material-ui/core/InputBase';
 import InputLabel from '@material-ui/core/InputLabel';
 
@@ -34,8 +35,27 @@ const useStyles = makeStyles((theme: Theme) =>
     }),
 );
 
-const LastContainer = styled.div`
+const EmailInput = styled.div`
+    display: flex;
+    background-color: #fff;
+    border-radius: 50px;
+    padding: 2px;
+    width: 60%;
 
+    ${media.sm`
+	    width: 50%;
+	`}
+
+    ${media.xs`
+	    width: 100%;
+	`}
+
+
+    input{
+        margin: 0px 20px;
+    }
+`;
+const LastContainer = styled.div`
     h2{
         font-size: 14px;
         color: #fff;
@@ -48,6 +68,12 @@ const LastContainer = styled.div`
         font-weight: bolder;
         margin: 0px 50px 0px 0px;
     }
+    p{
+        font-size: 14px;
+        color: #fff;
+        font-weight: bolder;
+        margin: 0px 0px 5px 0px;
+    }
     .MuiButton-root{
       color :#fff;
       font-weight: 600;
@@ -55,11 +81,10 @@ const LastContainer = styled.div`
     .midButton button{
         padding: 10px 20px;
     }
-    .MuiIconButton-root{
-        border-radius: 100;
-        background-color: "#FF6057";
-        padding: "0px 36px";
-        font-size: "16px";
+    .MuiButton-root{
+       background-color: #FF6057;
+        padding: 5px 40px;
+        border-radius: 50px;
     }
     .input{
     color: "white"
@@ -67,13 +92,7 @@ const LastContainer = styled.div`
 
 `;
 
-const StyledButton = styled.div`
-    .MuiButton-root{
-        background: linear-gradient(to right, #FF6057,#FF6057);
-        padding: 5px 40px;
-        border-radius: 100;
-    }
-`;
+
 
 const TextStyled = styled.div`
     border-radius: 10;
@@ -88,40 +107,29 @@ export const Lastsection = () => {
         <LastContainer >
             <Container>
                 <Grid container spacing={3}  >
-                    <Grid item xs={3}>
+                    <Grid item xs={6} md={3}>
                         <Slogo style={{ margin: "20px 0px 10px 0px" }} />
                         <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget diam at mi sollicitudin</h1>
                     </Grid>
-                    <Grid item xs={3}>
+                    <Grid item xs={6} md={3}>
                         <h1 style={{ margin: "30px 0px 30px 0px" }}>Nos services</h1>
-                        <h2>Avis clients
-                        Mentions légales
-                        Plan du site
-                        Blog d’Idéematic
-                        Le dictionnaire du digital
-                        ‹ Notre boutique /›</h2>
+                        <p>Avis clients</p>
+                        <p> Mentions légales</p>
+                        <p> Plan du site</p>
+                        <p> Blog d’Idéematic</p>
+                        <p> Le dictionnaire du digital</p>
+                        <p> ‹ Notre boutique /›</p>
                     </Grid>
-                    <Grid item xs={6}  >
+                    <Grid item xs={12} md={6}>
                         <h1 style={{ margin: "30px 0px 30px 0px" }}>Sign up for Special Offers!</h1>
-                        <Grid container>
-                            <Grid item>
-                                <FormControl className={classes.margin}>
-                                    <InputLabel shrink htmlFor="Mail">
-                                     </InputLabel>
-                                </FormControl>
+                        <EmailInput>
+                            <InputBase
+                                fullWidth={true}
+                                placeholder={"Mail"}
+                            />
+                            <Button> Subscribe </Button>
+                        </EmailInput>
 
-                            </Grid>
-
-
-                            <Grid item alignItems="stretch" style={{ display: "flex" }}>
-                                <StyledButton>
-                                    <Button style={{ borderRadius: 100 }}
-                                        variant="contained">
-                                        Subscribe
-                                </Button>
-                                </StyledButton>
-                            </Grid>
-                        </Grid>
                     </Grid>
                 </Grid>
             </Container>

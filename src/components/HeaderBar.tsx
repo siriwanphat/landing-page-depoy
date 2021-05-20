@@ -87,7 +87,7 @@ export const HeaderBar = () => {
     return (
         <HeaderBarContainer>
             <Grid container={true} justify="space-between" alignItems="center">
-                <Grid item md={2}>
+                <Grid item md={3}>
                     <Logo />
                 </Grid>
                 <Hidden smDown={true}>
@@ -99,7 +99,7 @@ export const HeaderBar = () => {
                             <Button>Testemonial</Button>
                         </div>
                     </Grid>
-                    <Grid item md={3}>
+                    <Grid item md={2}>
                         <StyledButton>
                             <Button variant="contained">About us</Button>
                         </StyledButton>
