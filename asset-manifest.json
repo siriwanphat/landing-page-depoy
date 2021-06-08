@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/landing-page-depoy/static/css/main.1635e87c.chunk.css",
-    "main.js": "/landing-page-depoy/static/js/main.e9a80cdd.chunk.js",
-    "main.js.map": "/landing-page-depoy/static/js/main.e9a80cdd.chunk.js.map",
+    "main.js": "/landing-page-depoy/static/js/main.8c3ba53a.chunk.js",
+    "main.js.map": "/landing-page-depoy/static/js/main.8c3ba53a.chunk.js.map",
     "runtime-main.js": "/landing-page-depoy/static/js/runtime-main.cf8a98cf.js",
     "runtime-main.js.map": "/landing-page-depoy/static/js/runtime-main.cf8a98cf.js.map",
     "static/css/2.6b560088.chunk.css": "/landing-page-depoy/static/css/2.6b560088.chunk.css",
@@ -21,6 +21,7 @@
     "static/media/bumble.1ba1dfe5.svg": "/landing-page-depoy/static/media/bumble.1ba1dfe5.svg",
     "static/media/forbes.d3b4750d.svg": "/landing-page-depoy/static/media/forbes.d3b4750d.svg",
     "static/media/greenIcon.09735e38.svg": "/landing-page-depoy/static/media/greenIcon.09735e38.svg",
+    "static/media/img.1dcb4021.png": "/landing-page-depoy/static/media/img.1dcb4021.png",
     "static/media/logo.2cc108f6.svg": "/landing-page-depoy/static/media/logo.2cc108f6.svg",
     "static/media/nearpod.ecf5d08f.svg": "/landing-page-depoy/static/media/nearpod.ecf5d08f.svg",
     "static/media/purpleIcon.e6f1a610.svg": "/landing-page-depoy/static/media/purpleIcon.e6f1a610.svg",
@@ -33,6 +34,6 @@
     "static/css/2.6b560088.chunk.css",
     "static/js/2.5a7552f1.chunk.js",
     "static/css/main.1635e87c.chunk.css",
-    "static/js/main.e9a80cdd.chunk.js"
+    "static/js/main.8c3ba53a.chunk.js"
   ]
 }
