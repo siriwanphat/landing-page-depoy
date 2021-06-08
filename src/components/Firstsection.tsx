@@ -12,6 +12,7 @@ import { Button, Card, CardMedia } from '@material-ui/core'
 import Box from '@material-ui/core/Box';
 import Popup from './images/nopath.png';
 import { media } from '../utils/mixins'
+import img from '../images/img.png';
 //import Poppins from '../fonts/Poppins-Regular.woff2';
 
 const useStyles = makeStyles((theme: Theme) =>
@@ -103,7 +104,7 @@ export const FirstSection = () => {
                 </Grid>
                 <Grid item xs={12} md={6}>
                     <Box>
-                        <img width={"100%"} height={"100%"} src="/images/1.png" />
+                        <img width={"100%"} height={"100%"} src={img}/>
                     </Box>
                 </Grid>
             </Grid>

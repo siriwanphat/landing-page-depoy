@@ -11,6 +11,7 @@ import Grid from '@material-ui/core/Grid';
 import styled from 'styled-components';
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import img from '../images/img.png';
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
@@ -239,13 +240,13 @@ export const Trdsection = () => {
                             showArrows={false}
                         >
                             <div>
-                                <img src="/images/1.png" />
+                                <img src={img} />
                             </div>
                             <div>
-                                <img src="/images/1.png" />
+                                <img src={img} />
                             </div>
                             <div>
-                                <img src="/images/1.png" />
+                                <img src={img}/>
                             </div>
                         </Carousel>
                     </Grid>

@@ -10,6 +10,7 @@ import { ReactComponent as Green } from '../svg/greenIcon.svg';
 import { ReactComponent as Purple } from '../svg/purpleIcon.svg';
 import Box from '@material-ui/core/Box';
 import { IconButton } from "@material-ui/core";
+import img from '../images/img.png';
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
@@ -144,7 +145,7 @@ export const NdSection = () => {
             <Grid container alignItems="center">
                 <Grid item xs={12} md={6}>
                     <Box>
-                        <img width={"100%"} height={"100%"}  src="/images/1.png" />
+                        <img width={"100%"} height={"100%"}  src={img} />
                     </Box>
                 </Grid>
                 <Grid item xs={12} md={6} >

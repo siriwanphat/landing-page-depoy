@@ -4,7 +4,7 @@ import MenuIcon from '@material-ui/icons/Menu';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import styled from "styled-components";
-import img from '../images/img1.png';
+import img from '../images/img.png';
 import {
     Button, Grid, Hidden, IconButton, Drawer,
     List, ListItem, ListItemText, Card, CardMedia, Container
@@ -58,13 +58,13 @@ export const FourthSection = () => {
                         showArrows={false}
                     >
                         <div>
-                            <img src="/images/1.png" />
+                            <img src={img} />
                         </div>
                         <div>
-                            <img src="/images/1.png" />
+                            <img src={img} />
                         </div>
                         <div>
-                            <img src="/images/1.png" />
+                            <img src={img} />
                         </div>
                     </Carousel>
                 </Grid>
