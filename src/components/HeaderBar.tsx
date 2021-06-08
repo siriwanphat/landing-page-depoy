@@ -65,19 +65,19 @@ export const HeaderBar = () => {
                     </IconButton>
                     <List>
                         <ListItem button={true}>
-                            <ListItemText primary={"Browser"} />
+                            <ListItemText primary={"About me"} />
                         </ListItem>
                         <ListItem button={true}>
-                            <ListItemText primary={"Bootcamps"} />
+                            <ListItemText primary={"Skill"} />
                         </ListItem>
                         <ListItem button={true}>
-                            <ListItemText primary={"How It Work"} />
+                            <ListItemText primary={"Portfolio"} />
                         </ListItem>
                         <ListItem button={true}>
-                            <ListItemText primary={"Testemonial"} />
+                            <ListItemText primary={"Experience"} />
                         </ListItem>
                         <StyledButton>
-                            <Button variant="contained">About us</Button>
+                            <Button variant="contained">contact me</Button>
                         </StyledButton>
                     </List>
                 </DrawerContainer>
@@ -93,15 +93,15 @@ export const HeaderBar = () => {
                 <Hidden smDown={true}>
                     <Grid item md={7}>
                         <div className="midButton">
-                            <Button>Browser</Button>
-                            <Button>Bootcamps</Button>
-                            <Button>How It Work</Button>
-                            <Button>Testemonial</Button>
+                            <Button>About me</Button>
+                            <Button>Skill</Button>
+                            <Button>Portfolio</Button>
+                            <Button>Experience</Button>
                         </div>
                     </Grid>
                     <Grid item md={2}>
                         <StyledButton>
-                            <Button variant="contained">About us</Button>
+                            <Button variant="contained">contact me</Button>
                         </StyledButton>
                     </Grid>
                 </Hidden>

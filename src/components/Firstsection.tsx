@@ -12,6 +12,7 @@ import { Button, Card, CardMedia } from '@material-ui/core'
 import Box from '@material-ui/core/Box';
 import Popup from './images/nopath.png';
 import { media } from '../utils/mixins'
+//import Poppins from '../fonts/Poppins-Regular.woff2';
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
